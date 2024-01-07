@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 chr_options = Options()
 chr_options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(options=chr_options)
+print(type(driver))
 driver.get("http://opensource-demo.orangehrmlive.com/")
 driver.maximize_window()
 title = driver.title
